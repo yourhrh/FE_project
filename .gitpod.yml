@@ -1,0 +1,12 @@
+tasks:
+  - init: |
+      cd back
+      npm install
+    command: npm start
+  - init: |
+      cd front
+      npm install
+    command: npm start
+ports:
+  - port: 3000
+    onOpen: open-preview
